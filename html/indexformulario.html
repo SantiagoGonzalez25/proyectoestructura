@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+<title>ANTIFAKETEAM</title>
+<link href="../css/estilos.css" rel="stylesheet" type="text/css"/>
+<script src="../js/funciones.js"></script>
+
+ 
+</head>
+
+<body>
+    <header class="header">
+        <ul> 
+            <li>
+                <a href="../index.html" >inicio</a>
+           </li>    
+              <li>
+                    <a href="indexformulario.html" >registrar</a>
+               </li>
+               <li>
+                     <a href="indexmru.html" >mru</a>
+                </li>
+                <li>
+                     <a href="indextrabajo.html">trabajo</a>
+                </li>
+                <li>
+                     <a href="indexbiblioteca.html">biblioteca</a>
+                </li>
+        </ul>
+
+   </header>
+<div id="contenedor">
+
+    <h1 id="textocontenedor"></h1>
+
+
+
+  <form id="cajasdetexto" action="../php/insertar.php" method="POST">  
+
+     <select name="tipoid">
+          <option value="TI" selected>tI</option>
+          <option value="CC">CC</option>
+          <option value="CE">CE</option>
+          <option value="Pasaporte">Pasaporte</option>
+     </select>
+     <br>
+     
+ <input type="text" placeholder="Digite identificación" name="boxid"><br>
+ <input type="text" placeholder="Digite nombre" name="boxname"><br> 
+ <input type="text" placeholder="Digite apellido" name="boxlastname" ><br> 
+ <input type="text" placeholder="Digite Email" name="boxemail"><br>
+
+ <select name="tipousr">
+     <option value="estudiante" selected>estudiante</option>
+     <option value="Docente">Docente</option>
+     <option value="Directivo">Directivo</option>
+     <option value="Administrativo">Administrativo</option>
+</select><br>
+<input type="password" placeholder="digite password" name="boxpass"><br>
+<input type="password" placeholder="digite celular" name="boxnumerocel"><br>
+<input type="submit" placeholder="Registrar"><br>
+
+
+ </form>
+
+
+</div> 
+
+
+
+</body>
+
+ </html>
+
